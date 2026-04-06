@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 
-const APP_STORE_URL = 'https://apps.apple.com/us/app/trimester-pro/id6744104960';
+const APP_STORE_URL = 'https://apps.apple.com/app/id6744104960';
 
 export default function DownloadCTA() {
   const t = useTranslations('cta');

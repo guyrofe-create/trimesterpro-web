@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { locales, localeConfig, type Locale } from '@/config/i18n';
 import { useState, useEffect } from 'react';
 
-const APP_STORE_URL = 'https://apps.apple.com/us/app/trimester-pro/id6744104960';
+const APP_STORE_URL = 'https://apps.apple.com/app/id6744104960';
 
 export default function Navbar({ locale }: { locale: Locale }) {
   const t = useTranslations('nav');
