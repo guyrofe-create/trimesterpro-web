@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,8 +14,8 @@ html {
 }
 
 body {
-  background-color: #FFFAF5;
-  color: #332F2A;
+  background-color: #FFFFFF;
+  color: #2A2319;
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,20 +33,23 @@ h1, h2, h3, h4 {
   font-family: var(--font-inter);
 }
 
+/* Hero: warm blush gradient — distinctly different from white below-the-fold */
 .gradient-hero {
   background:
-    radial-gradient(ellipse 70% 50% at 70% 30%, rgba(242,164,110,0.18) 0%, transparent 65%),
-    radial-gradient(ellipse 50% 60% at 20% 80%, rgba(79,111,247,0.08) 0%, transparent 60%),
-    linear-gradient(160deg, #FFFAF5 0%, #FFF6EF 55%, #FFF0E5 100%);
+    radial-gradient(ellipse 90% 60% at 65% 15%, rgba(242,164,110,0.28) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 70% at 10% 85%, rgba(242,164,110,0.14) 0%, transparent 55%),
+    linear-gradient(170deg, #FFF8F2 0%, #FFF3E8 50%, #FFEEDD 100%);
 }
 
+/* Glass floating cards */
 .glass-card {
-  background: rgba(255,255,255,0.82);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(201,173,151,0.25);
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(242,164,110,0.20);
 }
 
+/* Phone float animation */
 @keyframes float {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
   33%  { transform: translateY(-9px) rotate(0.4deg); }
@@ -57,6 +60,22 @@ h1, h2, h3, h4 {
   animation: float 5s ease-in-out infinite;
 }
 
-.screenshot-glow {
-  filter: drop-shadow(0 32px 64px rgba(79,111,247,0.15)) drop-shadow(0 8px 24px rgba(42,35,25,0.12));
+/* Animated counter */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.counter-animate {
+  animation: countUp 0.5s ease-out forwards;
+}
+
+/* USP badge pulse */
+@keyframes badge-in {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.badge-in {
+  animation: badge-in 0.3s ease-out forwards;
 }

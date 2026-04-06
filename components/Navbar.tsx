@@ -34,10 +34,10 @@ export default function Navbar({ locale }: { locale: Locale }) {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-xl bg-accent flex items-center justify-center shadow-accent-sm">
-            <span className="text-white text-sm font-bold">T</span>
+          <div className="w-8 h-8 rounded-xl bg-[#2A2319] flex items-center justify-center">
+            <span className="text-[#F2A46E] text-sm font-bold">T</span>
           </div>
-          <span className="font-bold text-espresso text-[15px] tracking-tight">Trimester Pro</span>
+          <span className="font-bold text-[#2A2319] text-[15px] tracking-tight">Trimester Pro</span>
         </div>
 
         {/* Desktop nav */}
@@ -54,8 +54,8 @@ export default function Navbar({ locale }: { locale: Locale }) {
                 onClick={() => switchLocale(loc)}
                 className={`px-3 py-1 rounded-full text-xs font-semibold transition-all ${
                   locale === loc
-                    ? 'bg-white text-accent shadow-warm-sm'
-                    : 'text-sub hover:text-espresso'
+                    ? 'bg-white text-[#2A2319] shadow-warm-sm'
+                    : 'text-[#7A6E65] hover:text-[#2A2319]'
                 }`}
               >
                 {localeConfig[loc].flag} {loc.toUpperCase()}
@@ -67,7 +67,7 @@ export default function Navbar({ locale }: { locale: Locale }) {
             href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-accentHover transition-colors shadow-accent-sm"
+            className="bg-[#2A2319] text-[#FFFAF5] text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#1A1510] transition-colors"
           >
             {t('download')}
           </a>
@@ -102,8 +102,8 @@ export default function Navbar({ locale }: { locale: Locale }) {
                 onClick={() => switchLocale(loc)}
                 className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-all ${
                   locale === loc
-                    ? 'border-accent text-accent bg-accentSoft'
-                    : 'border-border text-sub'
+                    ? 'border-[#2A2319] text-[#2A2319] bg-[#FFF6EC]'
+                    : 'border-[rgba(201,173,151,0.3)] text-[#7A6E65]'
                 }`}
               >
                 {localeConfig[loc].flag} {loc.toUpperCase()}
@@ -114,7 +114,7 @@ export default function Navbar({ locale }: { locale: Locale }) {
             href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-accent text-white text-sm font-semibold px-5 py-3 rounded-full text-center shadow-accent-sm"
+            className="bg-[#2A2319] text-[#FFFAF5] text-sm font-semibold px-5 py-3 rounded-full text-center"
           >
             {t('download')}
           </a>

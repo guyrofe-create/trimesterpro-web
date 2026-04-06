@@ -42,13 +42,16 @@ export default function Features() {
 
   // Bento layout: first card is large (spans 2 cols on desktop), rest are normal
   return (
-    <section id="features" className="py-24 px-6 bg-bg">
+    <section id="features" className="py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-espresso mb-4 tracking-tight leading-tight">
+        <div className="text-center mb-14">
+          <h2
+            className="font-extrabold text-[#2A2319] mb-4 tracking-tight leading-[1.1]"
+            style={{ fontSize: 'clamp(1.875rem, 3vw + 0.5rem, 2.75rem)' }}
+          >
             {t('title')}
           </h2>
-          <p className="text-sub text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-[#6B6560] text-lg max-w-xl mx-auto leading-relaxed">
             {t('subtitle')}
           </p>
         </div>
@@ -59,23 +62,18 @@ export default function Features() {
             return (
               <div
                 key={i}
-                className={`group relative bg-surface border border-border rounded-4xl p-7 hover:border-accent/25 hover:shadow-warm-md transition-all duration-300 hover:-translate-y-0.5 ${
+                className={`group relative bg-[#FAFAF8] border border-[rgba(201,173,151,0.2)] rounded-[2rem] p-7 hover:border-[#F2A46E]/40 hover:shadow-[0_12px_40px_rgba(242,164,110,0.12)] transition-all duration-300 hover:-translate-y-0.5 ${
                   isFirst ? 'lg:col-span-2' : ''
                 }`}
               >
                 {/* Icon */}
-                <div className="w-12 h-12 rounded-3xl bg-accentSoft text-accent flex items-center justify-center mb-5 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                <div className="w-11 h-11 rounded-2xl bg-[#FFF0E0] text-[#C47835] flex items-center justify-center mb-5 group-hover:bg-[#F2A46E] group-hover:text-white transition-all duration-300">
                   {iconMap[item.icon]}
                 </div>
 
                 {/* Content */}
-                <h3 className="font-bold text-espresso text-[17px] mb-2.5 tracking-tight">{item.title}</h3>
-                <p className="text-sub text-sm leading-relaxed">{item.desc}</p>
-
-                {/* Subtle bottom accent for first card */}
-                {isFirst && (
-                  <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
-                )}
+                <h3 className="font-bold text-[#2A2319] text-[16px] mb-2 tracking-tight">{item.title}</h3>
+                <p className="text-[#6B6560] text-[13.5px] leading-relaxed">{item.desc}</p>
               </div>
             );
           })}
