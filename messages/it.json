@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "features": "Funzioni",
+    "screenshots": "Screenshot",
+    "download": "Scarica"
+  },
+  "hero": {
+    "badge": "Il tuo compagno di gravidanza",
+    "title": "Trimester Pro",
+    "subtitle": "Monitoraggio della gravidanza settimana per settimana con profondità medica. Segui lo sviluppo del tuo bambino, pianifica gli appuntamenti e rimani aggiornata — nella tua lingua.",
+    "cta": "Scarica su App Store",
+    "ctaSub": "Gratuito · iOS · Richiede iOS 15.1+",
+    "weeks": "40 settimane",
+    "weeksLabel": "di contenuto",
+    "languages": "3 lingue",
+    "languagesLabel": "eb · en · it",
+    "tools": "8+ strumenti",
+    "toolsLabel": "integrati"
+  },
+  "features": {
+    "title": "Tutto quello che ti serve, settimana dopo settimana",
+    "subtitle": "Costruito per le mamme che vogliono informazioni reali, non solo rassicurazioni.",
+    "items": [
+      {
+        "icon": "calendar",
+        "title": "Sviluppo Settimanale",
+        "desc": "Contenuto dettagliato sullo sviluppo fetale per tutte le 40 settimane, con confronti di dimensioni e monitoraggio delle tappe."
+      },
+      {
+        "icon": "chart",
+        "title": "Strumenti Medici",
+        "desc": "Calcolatore DPP, timer contrazioni, conta calci, monitoraggio peso — tutto in un posto."
+      },
+      {
+        "icon": "book",
+        "title": "Pianificatore Appuntamenti",
+        "desc": "Non perdere mai un esame o un'ecografia. Monitora l'intero calendario delle cure prenatali dalla settimana 8 al parto."
+      },
+      {
+        "icon": "globe",
+        "title": "3 Lingue",
+        "desc": "Contenuto completo in ebraico, inglese e italiano. L'app rileva automaticamente la tua lingua."
+      },
+      {
+        "icon": "heart",
+        "title": "Diario Sintomi",
+        "desc": "Registra sintomi, sensazioni e note. Il tuo diario personale della gravidanza, sempre con te."
+      },
+      {
+        "icon": "share",
+        "title": "Condividi col Partner",
+        "desc": "Invia un aggiornamento personalizzato al tuo partner con le dimensioni attuali del bambino e i progressi settimanali."
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Una bella esperienza ogni settimana",
+    "subtitle": "Progettata per sembrare calma, calda e focalizzata — proprio come dovrebbe essere la gravidanza.",
+    "captions": {
+      "home": "Home",
+      "depth": "Sviluppo Fetale",
+      "plan": "Piano Appuntamenti",
+      "tools": "Strumenti Medici",
+      "lib": "Biblioteca Info",
+      "cal": "Calendario Settimanale"
+    }
+  },
+  "cta": {
+    "title": "Inizia il tuo percorso di gravidanza oggi",
+    "subtitle": "Scarica Trimester Pro gratuitamente su App Store.",
+    "button": "Scarica su App Store"
+  },
+  "footer": {
+    "privacy": "Informativa sulla Privacy",
+    "contact": "Contatto",
+    "rights": "© 2026 Trimester Pro. Tutti i diritti riservati."
+  },
+  "privacy": {
+    "title": "Informativa sulla Privacy",
+    "lastUpdated": "Ultimo aggiornamento: Aprile 2026",
+    "sections": [
+      {
+        "title": "Panoramica",
+        "content": "Trimester Pro è progettato tenendo conto della tua privacy. L'app memorizza tutte le preferenze localmente solo sul tuo dispositivo. Non raccogliamo, trasmettiamo o vendiamo dati personali."
+      },
+      {
+        "title": "Dati Memorizzati Localmente",
+        "content": "I seguenti dati sono memorizzati solo sul tuo dispositivo e non vengono mai inviati ai nostri server: data di inizio gravidanza, preferenza lingua, progressi settimanali, voci del diario sintomi, cronologia contrazioni, dati conta calci, registri peso e note appuntamenti."
+      },
+      {
+        "title": "Dati che Non Raccogliamo",
+        "content": "Non raccogliamo: nome, email, posizione, cartelle cliniche, dati biometrici o informazioni identificative. Non ci sono tracker analitici o SDK pubblicitari nell'app."
+      },
+      {
+        "title": "Condivisione col Partner",
+        "content": "Quando usi la funzione 'Condividi col Partner', viene generato un link tramite trimesterpro.app contenente solo il numero della settimana attuale e le informazioni sulle dimensioni del bambino. Nessuna informazione identificativa personale è inclusa in questi link."
+      },
+      {
+        "title": "Notifiche",
+        "content": "Se abiliti le notifiche, l'app programma notifiche locali sul tuo dispositivo. Nessun dato di notifica viene inviato a server esterni."
+      },
+      {
+        "title": "Fotocamera e Foto",
+        "content": "L'app potrebbe richiedere l'accesso alla fotocamera per la funzione Galleria Pancione. Le foto sono memorizzate localmente solo sul tuo dispositivo."
+      },
+      {
+        "title": "Modifiche Future",
+        "content": "Se aggiungeremo sincronizzazione cloud o analisi in futuro, lo divulgheremo chiaramente, otterremo il consenso e forniremo opzioni di opt-out prima di implementare qualsiasi modifica."
+      },
+      {
+        "title": "Contatto",
+        "content": "Per qualsiasi domanda relativa alla privacy, contattaci a briutguy@gmail.com"
+      }
+    ]
+  }
+}

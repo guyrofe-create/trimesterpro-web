@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "features": "Features",
+    "screenshots": "Screenshots",
+    "download": "Download"
+  },
+  "hero": {
+    "badge": "Your pregnancy companion",
+    "title": "Trimester Pro",
+    "subtitle": "Week-by-week pregnancy tracking with medical-grade depth. Follow your baby's development, plan appointments, and stay informed — in your language.",
+    "cta": "Download on the App Store",
+    "ctaSub": "Free · iOS · Requires iOS 15.1+",
+    "weeks": "40 weeks",
+    "weeksLabel": "of content",
+    "languages": "3 languages",
+    "languagesLabel": "he · en · it",
+    "tools": "8+ tools",
+    "toolsLabel": "built-in"
+  },
+  "features": {
+    "title": "Everything you need, week by week",
+    "subtitle": "Built for mothers who want real information, not just reassurance.",
+    "items": [
+      {
+        "icon": "calendar",
+        "title": "Weekly Development",
+        "desc": "Detailed fetal development content for all 40 weeks, with size comparisons and milestone tracking."
+      },
+      {
+        "icon": "chart",
+        "title": "Medical Tools",
+        "desc": "EDD calculator, contraction timer, kick counter, weight tracker — all in one place."
+      },
+      {
+        "icon": "book",
+        "title": "Appointment Planner",
+        "desc": "Never miss a test or scan. Track your entire prenatal care schedule from week 8 to birth."
+      },
+      {
+        "icon": "globe",
+        "title": "3 Languages",
+        "desc": "Full content in Hebrew, English and Italian. The app detects your language automatically."
+      },
+      {
+        "icon": "heart",
+        "title": "Symptom Journal",
+        "desc": "Log symptoms, feelings and notes. Your personal pregnancy diary, always with you."
+      },
+      {
+        "icon": "share",
+        "title": "Share with Partner",
+        "desc": "Send a personalised update to your partner with your baby's current size and week progress."
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "A beautiful experience every week",
+    "subtitle": "Designed to feel calm, warm and focused — just like pregnancy should be.",
+    "captions": {
+      "home": "Home",
+      "depth": "Fetal Development",
+      "plan": "Appointment Plan",
+      "tools": "Medical Tools",
+      "lib": "Info Library",
+      "cal": "Weekly Calendar"
+    }
+  },
+  "cta": {
+    "title": "Start your pregnancy journey today",
+    "subtitle": "Download Trimester Pro for free on the App Store.",
+    "button": "Download on the App Store"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "rights": "© 2026 Trimester Pro. All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: April 2026",
+    "sections": [
+      {
+        "title": "Overview",
+        "content": "Trimester Pro is designed with your privacy in mind. The app stores all preferences locally on your device only. We do not collect, transmit or sell personal data."
+      },
+      {
+        "title": "Data We Store Locally",
+        "content": "The following data is stored only on your device and never sent to our servers: your pregnancy start date, language preference, week progress, symptom journal entries, contraction history, kick counter data, weight logs, and appointment notes."
+      },
+      {
+        "title": "Data We Do Not Collect",
+        "content": "We do not collect: your name, email, location, health records, biometric data, or any identifying information. There are no analytics trackers or advertising SDKs in the app."
+      },
+      {
+        "title": "Partner Sharing",
+        "content": "When you use the 'Share with Partner' feature, a link is generated via trimesterpro.app containing only your current week number and baby size information. No personal identifying information is included in these links."
+      },
+      {
+        "title": "Notifications",
+        "content": "If you enable notifications, the app schedules local notifications on your device. No notification data is sent to external servers."
+      },
+      {
+        "title": "Camera & Photos",
+        "content": "The app may request camera access for the Bump Gallery feature. Photos are stored locally on your device only."
+      },
+      {
+        "title": "Future Changes",
+        "content": "If we add cloud sync or analytics in the future, we will clearly disclose it, obtain consent, and provide opt-out options before implementing any changes."
+      },
+      {
+        "title": "Contact",
+        "content": "For any privacy-related questions, contact us at briutguy@gmail.com"
+      }
+    ]
+  }
+}
