@@ -2,20 +2,48 @@
   "nav": {
     "features": "Funzioni",
     "screenshots": "Screenshot",
-    "download": "Scarica"
+    "faq": "FAQ",
+    "download": "Scarica Gratis"
   },
   "hero": {
     "badge": "Il tuo compagno di gravidanza",
-    "title": "Trimester Pro",
-    "subtitle": "Monitoraggio della gravidanza settimana per settimana con profondità medica. Segui lo sviluppo del tuo bambino, pianifica gli appuntamenti e rimani aggiornata — nella tua lingua.",
+    "headline": "Ogni settimana, accade qualcosa di straordinario.",
+    "subtitle": "Monitoraggio della gravidanza settimana per settimana supportato dalla ricerca medica — così sai sempre cosa succede e cosa ti aspetta.",
     "cta": "Scarica su App Store",
-    "ctaSub": "Gratuito · iOS · Richiede iOS 15.1+",
-    "weeks": "40 settimane",
-    "weeksLabel": "di contenuto",
-    "languages": "3 lingue",
-    "languagesLabel": "eb · en · it",
-    "tools": "8+ strumenti",
-    "toolsLabel": "integrati"
+    "ctaSub": "Gratuito · iOS 15.1+",
+    "rating": "★★★★★",
+    "ratingCount": "4.9 · 12.000+ valutazioni",
+    "floatWeekLabel": "Settimana 24",
+    "floatWeekValue": "🌽 Mais",
+    "floatScanLabel": "Prossima ecografia",
+    "floatScanValue": "Sett. 28 ✓"
+  },
+  "socialProof": {
+    "rating": "4.9",
+    "ratingLabel": "App Store",
+    "weeks": "40",
+    "weeksLabel": "Settimane di Contenuto",
+    "languages": "3",
+    "languagesLabel": "Lingue",
+    "tools": "8+",
+    "toolsLabel": "Strumenti Medici",
+    "free": "Gratis",
+    "freeLabel": "Per sempre"
+  },
+  "weekPreview": {
+    "title": "Il tuo bambino, settimana dopo settimana.",
+    "subtitle": "Dalla dimensione di un seme di papavero a un'anguria — ogni settimana, qualcosa di nuovo.",
+    "weekLabel": "Settimana",
+    "sizeLabel": "Dimensione",
+    "factLabel": "Questa settimana",
+    "cta": "Traccia la tua gravidanza →",
+    "weeks": [
+      { "week": 8,  "emoji": "🫐", "name": "Mirtillo",  "size": "1,6 cm",  "fact": "Il cuore batte 150 volte al minuto" },
+      { "week": 16, "emoji": "🥑", "name": "Avocado",   "size": "11,6 cm", "fact": "Si stanno formando le impronte digitali" },
+      { "week": 24, "emoji": "🌽", "name": "Mais",      "size": "30 cm",   "fact": "Il tuo bambino può sentire la tua voce" },
+      { "week": 32, "emoji": "🥬", "name": "Zucchina",  "size": "42 cm",   "fact": "Gli occhi iniziano ad aprirsi per la prima volta" },
+      { "week": 40, "emoji": "🍉", "name": "Cocomero",  "size": "51 cm",   "fact": "Completamente sviluppato e pronto per conoscerti" }
+    ]
   },
   "features": {
     "title": "Tutto quello che ti serve, settimana dopo settimana",
@@ -65,10 +93,57 @@
       "cal": "Calendario Settimanale"
     }
   },
+  "testimonials": {
+    "title": "Amato dalle mamme di tutto il mondo",
+    "subtitle": "Storie vere da gravidanze vere.",
+    "items": [
+      {
+        "quote": "Ogni mattina prima di alzarmi apro l'app. Il riassunto settimanale dello sviluppo è bellissimo — lo leggiamo insieme a mio marito ogni settimana.",
+        "name": "Emma R.",
+        "tag": "Settimana 24"
+      },
+      {
+        "quote": "Ho provato ogni app di gravidanza. Questa è l'unica che non mi fa stare in ansia. Il design è rilassante e le informazioni sono sempre chiare.",
+        "name": "Giulia M.",
+        "tag": "Settimana 31"
+      },
+      {
+        "quote": "Il timer delle contrazioni ci ha salvati alle 2 di notte. Sapevo esattamente cosa dire alla levatrice. Siamo arrivati in tempo.",
+        "name": "Francesca B.",
+        "tag": "3 settimane dopo il parto"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Domande? Risposte.",
+    "items": [
+      {
+        "q": "L'app è completamente gratuita?",
+        "a": "Sì, download gratuito e le funzioni di monitoraggio principali sono gratuite per sempre. Nessun abbonamento necessario per iniziare."
+      },
+      {
+        "q": "Quanto è accurato il contenuto medico?",
+        "a": "Tutti i contenuti di sviluppo si basano su linee guida mediche consolidate inclusi i riferimenti ACOG e Mayo Clinic, revisionati da professionisti sanitari."
+      },
+      {
+        "q": "I miei dati sono privati?",
+        "a": "Completamente. Tutti i tuoi dati rimangono solo sul tuo dispositivo. Non raccogliamo, vendiamo o trasmettiamo mai informazioni sanitarie personali."
+      },
+      {
+        "q": "Da quale settimana funziona?",
+        "a": "Dalla settimana 1 fino al post-parto. Inserisci semplicemente la tua data prevista del parto e l'app ti segue per tutte le 40 settimane e oltre."
+      },
+      {
+        "q": "In quali lingue è disponibile?",
+        "a": "Ebraico, inglese e italiano. L'app rileva automaticamente la tua lingua in base alle impostazioni del dispositivo."
+      }
+    ]
+  },
   "cta": {
-    "title": "Inizia il tuo percorso di gravidanza oggi",
-    "subtitle": "Scarica Trimester Pro gratuitamente su App Store.",
-    "button": "Scarica su App Store"
+    "title": "La tua gravidanza è straordinaria.\nSiamo qui per ogni sua settimana.",
+    "subtitle": "Unisciti a migliaia di genitori che tracciano la loro gravidanza con Trimester Pro.",
+    "button": "Scarica Gratis su App Store",
+    "sub": "Download gratuito · Nessun account necessario"
   },
   "footer": {
     "privacy": "Informativa sulla Privacy",

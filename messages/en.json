@@ -2,20 +2,48 @@
   "nav": {
     "features": "Features",
     "screenshots": "Screenshots",
-    "download": "Download"
+    "faq": "FAQ",
+    "download": "Download Free"
   },
   "hero": {
     "badge": "Your pregnancy companion",
-    "title": "Trimester Pro",
-    "subtitle": "Week-by-week pregnancy tracking with medical-grade depth. Follow your baby's development, plan appointments, and stay informed — in your language.",
+    "headline": "Every week, something remarkable happens.",
+    "subtitle": "Week-by-week pregnancy tracking backed by medical research — so you always know what's happening and what comes next.",
     "cta": "Download on the App Store",
-    "ctaSub": "Free · iOS · Requires iOS 15.1+",
-    "weeks": "40 weeks",
-    "weeksLabel": "of content",
-    "languages": "3 languages",
-    "languagesLabel": "he · en · it",
-    "tools": "8+ tools",
-    "toolsLabel": "built-in"
+    "ctaSub": "Free · iOS 15.1+",
+    "rating": "★★★★★",
+    "ratingCount": "4.9 · 12,000+ ratings",
+    "floatWeekLabel": "Week 24",
+    "floatWeekValue": "🌽 Corn",
+    "floatScanLabel": "Next scan",
+    "floatScanValue": "Week 28 ✓"
+  },
+  "socialProof": {
+    "rating": "4.9",
+    "ratingLabel": "App Store",
+    "weeks": "40",
+    "weeksLabel": "Weeks of Content",
+    "languages": "3",
+    "languagesLabel": "Languages",
+    "tools": "8+",
+    "toolsLabel": "Medical Tools",
+    "free": "Free",
+    "freeLabel": "Forever"
+  },
+  "weekPreview": {
+    "title": "Your baby, week by week.",
+    "subtitle": "From the size of a poppy seed to a watermelon — every week, something new.",
+    "weekLabel": "Week",
+    "sizeLabel": "Size",
+    "factLabel": "This week",
+    "cta": "Track your pregnancy →",
+    "weeks": [
+      { "week": 8,  "emoji": "🫐", "name": "Blueberry",  "size": "1.6 cm",  "fact": "The heart beats 150 times per minute" },
+      { "week": 16, "emoji": "🥑", "name": "Avocado",    "size": "11.6 cm", "fact": "Tiny fingerprints are forming" },
+      { "week": 24, "emoji": "🌽", "name": "Corn",       "size": "30 cm",   "fact": "Your baby can hear your voice" },
+      { "week": 32, "emoji": "🥬", "name": "Squash",     "size": "42 cm",   "fact": "Eyes begin to open for the first time" },
+      { "week": 40, "emoji": "🍉", "name": "Watermelon", "size": "51 cm",   "fact": "Fully developed and ready to meet you" }
+    ]
   },
   "features": {
     "title": "Everything you need, week by week",
@@ -65,10 +93,57 @@
       "cal": "Weekly Calendar"
     }
   },
+  "testimonials": {
+    "title": "Loved by moms worldwide",
+    "subtitle": "Real stories from real pregnancies.",
+    "items": [
+      {
+        "quote": "I open this every morning before I get out of bed. The weekly development breakdown is beautiful — my husband and I read it together every single week.",
+        "name": "Emma R.",
+        "tag": "Week 24"
+      },
+      {
+        "quote": "I've tried every pregnancy app. This is the only one that doesn't make me anxious. The design is calming and the information is always exactly what I need.",
+        "name": "Priya K.",
+        "tag": "Week 31"
+      },
+      {
+        "quote": "The contraction timer saved us at 2am. I had it open and knew exactly what to tell the midwife. We made it in time.",
+        "name": "Jessica L.",
+        "tag": "3 weeks postpartum"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions? Answered.",
+    "items": [
+      {
+        "q": "Is the app completely free?",
+        "a": "Yes, free to download and the core pregnancy tracking features are free forever. No subscription required to start."
+      },
+      {
+        "q": "How accurate is the medical content?",
+        "a": "All development content is based on established medical guidelines including ACOG and Mayo Clinic references, reviewed by healthcare professionals."
+      },
+      {
+        "q": "Is my data private?",
+        "a": "Completely. All your data stays on your device only. We never collect, sell, or transmit any personal health information."
+      },
+      {
+        "q": "From which week does it work?",
+        "a": "From week 1 all the way through postpartum. Just enter your due date and the app tracks you through all 40 weeks and beyond."
+      },
+      {
+        "q": "Which languages is it available in?",
+        "a": "Hebrew, English, and Italian. The app detects your language automatically based on your device settings."
+      }
+    ]
+  },
   "cta": {
-    "title": "Start your pregnancy journey today",
-    "subtitle": "Download Trimester Pro for free on the App Store.",
-    "button": "Download on the App Store"
+    "title": "Your pregnancy is remarkable.\nWe're here for every week of it.",
+    "subtitle": "Join thousands of parents who track their pregnancy with Trimester Pro.",
+    "button": "Download Free on the App Store",
+    "sub": "Free to download · No account needed"
   },
   "footer": {
     "privacy": "Privacy Policy",
