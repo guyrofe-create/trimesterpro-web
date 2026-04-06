@@ -8,6 +8,7 @@ const APP_STORE_URL = 'https://apps.apple.com/app/trimester-pro/id6744104960';
 
 export default function Hero({ locale }: { locale: Locale }) {
   const t = useTranslations('hero');
+  // Only used for floating card positioning (physical left/right) and CTA label text
   const isRTL = locale === 'he';
 
   const usps = [
@@ -25,13 +26,22 @@ export default function Hero({ locale }: { locale: Locale }) {
   return (
     <section className="gradient-hero min-h-screen flex flex-col justify-center pt-20 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 py-16 lg:py-24 w-full">
-        <div className={`flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16 ${isRTL ? 'lg:flex-row-reverse' : ''}`}>
+        {/*
+          flex-col-reverse on mobile (phone above text), lg:flex-row on desktop.
+          dir="rtl" on <html> automatically makes flex-row flow right→left,
+          so text appears on the RIGHT and phone on the LEFT in Hebrew — no manual override needed.
+        */}
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
 
-          {/* ── Left column: text ── */}
-          <div className={`flex-1 text-center ${isRTL ? 'lg:text-right' : 'lg:text-left'}`}>
+          {/* ── Text column ── */}
+          {/*
+            text-center on mobile, text-start on desktop.
+            text-start = left in LTR, right in RTL — auto-handled by dir="rtl".
+          */}
+          <div className="flex-1 text-center lg:text-start">
 
-            {/* ① Stars — ABOVE headline (no fake count) */}
-            <div className={`flex items-center gap-2 mb-5 ${isRTL ? 'justify-center lg:justify-end' : 'justify-center lg:justify-start'}`}>
+            {/* ① Stars ABOVE headline */}
+            <div className="flex items-center gap-2 mb-5 justify-center lg:justify-start">
               <div className="flex gap-0.5">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <svg key={i} width="15" height="15" viewBox="0 0 24 24" fill="#F59E0B">
@@ -42,9 +52,9 @@ export default function Hero({ locale }: { locale: Locale }) {
               <span className="text-[13px] text-[#9A9490] leading-none">App Store</span>
             </div>
 
-            {/* ② Headline — fluid clamp size */}
+            {/* ② Headline */}
             <h1
-              className="font-extrabold leading-[1.06] tracking-[-0.03em] text-espresso mb-4 max-w-xl mx-auto lg:mx-0"
+              className="font-extrabold leading-[1.06] tracking-[-0.03em] text-[#2A2319] mb-4 max-w-xl mx-auto lg:mx-0"
               style={{ fontSize: 'clamp(2.25rem, 5vw + 0.5rem, 4rem)' }}
             >
               {t('headline')}
@@ -55,11 +65,15 @@ export default function Hero({ locale }: { locale: Locale }) {
               {t('subtitle')}
             </p>
 
-            {/* ④ USP checklist — clean, light, visible above fold */}
-            <ul className={`flex flex-col gap-2.5 max-w-xs mx-auto lg:mx-0 mb-8 ${isRTL ? 'items-end' : 'items-start'}`}>
+            {/* ④ USP checklist
+                flex-row: checkmark first in DOM.
+                In LTR: checkmark on LEFT, text on RIGHT — correct.
+                In RTL (dir=rtl): checkmark on RIGHT (start), text on LEFT — correct.
+                NO flex-row-reverse override needed.
+            */}
+            <ul className="flex flex-col gap-2.5 max-w-xs mx-auto lg:mx-0 mb-8 items-start">
               {usps.map((usp, i) => (
-                <li key={i} className={`flex items-center gap-2.5 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                  {/* Sage checkmark circle */}
+                <li key={i} className="flex items-center gap-2.5">
                   <span className="w-5 h-5 rounded-full bg-[#6B9E7C]/15 flex items-center justify-center flex-shrink-0">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
                       <path d="M2 5.2l2.2 2.2 3.6-4.4" stroke="#6B9E7C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -75,8 +89,8 @@ export default function Hero({ locale }: { locale: Locale }) {
               ))}
             </ul>
 
-            {/* ⑤ CTA — pill button (rounded-full like Flo) */}
-            <div className={`flex flex-col gap-2 ${isRTL ? 'items-center lg:items-end' : 'items-center lg:items-start'}`}>
+            {/* ⑤ CTA pill button */}
+            <div className="flex flex-col gap-2 items-center lg:items-start">
               <a
                 href={APP_STORE_URL}
                 target="_blank"
@@ -86,7 +100,7 @@ export default function Hero({ locale }: { locale: Locale }) {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="flex-shrink-0">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                 </svg>
-                <div className={isRTL ? 'text-right' : 'text-left'}>
+                <div className="text-start">
                   <div className="text-[10px] opacity-55 leading-none mb-0.5">{downloadLabel}</div>
                   <div className="text-[16px] font-bold leading-none">App Store</div>
                 </div>
@@ -95,14 +109,12 @@ export default function Hero({ locale }: { locale: Locale }) {
             </div>
           </div>
 
-          {/* ── Right column: phone mockup ── */}
+          {/* ── Phone mockup ── */}
           <div className="flex-1 flex justify-center items-center relative">
             <div className="relative float-animation">
 
-              {/* Warm glow behind phone */}
               <div className="absolute inset-[-25%] bg-[#F2A46E]/18 blur-3xl rounded-full pointer-events-none" />
 
-              {/* Primary phone */}
               <div className="relative z-10 w-[240px] lg:w-[274px]">
                 <div className="bg-[#2A2319] rounded-[48px] p-[11px] shadow-[0_32px_80px_rgba(42,35,25,0.30)]">
                   <div className="bg-[#FFFAF5] rounded-[38px] overflow-hidden aspect-[9/19.5]">
@@ -118,13 +130,12 @@ export default function Hero({ locale }: { locale: Locale }) {
                 </div>
               </div>
 
-              {/* Floating card — week */}
+              {/* Floating cards: physical left/right positioning stays manual */}
               <div className={`absolute top-[13%] ${isRTL ? '-right-4 lg:-right-20' : '-left-4 lg:-left-20'} glass-card rounded-2xl px-4 py-3 shadow-[0_8px_24px_rgba(242,164,110,0.18)] z-20 hidden lg:block`}>
                 <div className="text-[11px] text-[#7A6E65] mb-1 font-medium">{t('floatWeekLabel')}</div>
                 <div className="text-[14px] font-bold text-[#2A2319]">{t('floatWeekValue')}</div>
               </div>
 
-              {/* Floating card — scan */}
               <div className={`absolute bottom-[20%] ${isRTL ? '-left-4 lg:-left-18' : '-right-4 lg:-right-18'} glass-card rounded-2xl px-4 py-3 shadow-[0_8px_24px_rgba(242,164,110,0.18)] z-20 hidden lg:block`}>
                 <div className="text-[11px] text-[#7A6E65] mb-1 font-medium">{t('floatScanLabel')}</div>
                 <div className="text-[14px] font-bold text-[#6B9E7C]">{t('floatScanValue')}</div>
