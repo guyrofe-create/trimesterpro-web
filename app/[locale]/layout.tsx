@@ -108,7 +108,7 @@ function buildJsonLd(locale: string) {
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     author: {
       '@type': 'Person',
-      name: 'Dr. Guy Rofé',
+      name: 'Guy Rofe, MD',
       url: 'https://trimesterpro.app',
     },
     featureList:

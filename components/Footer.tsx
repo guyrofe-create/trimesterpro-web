@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { type Locale } from '@/config/i18n';
 
 const createdBy: Record<Locale, string> = {
-  en: 'Created by Dr. Guy Rofé',
-  he: 'נוצר על ידי ד״ר גיא ורפא',
-  it: 'Creato dal Dr. Guy Rofé',
+  en: 'Guy Rofe, MD',
+  he: 'ד״ר גיא רופא',
+  it: 'Dott. Guy Rofe',
 };
 
 export default function Footer({ locale }: { locale: Locale }) {
