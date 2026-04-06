@@ -8,7 +8,7 @@
   "hero": {
     "badge": "Your pregnancy companion",
     "headline": "The pregnancy app that goes deeper.",
-    "subtitle": "Doctor-reviewed content for all 40 weeks. Adapted for Israel, UK, US & Italy. The only app with partner sharing and PDF birth plan export.",
+    "subtitle": "Doctor-reviewed content for all 40 weeks. Adapted for Israel, UK, US and Italy.",
     "cta": "Download on the App Store",
     "ctaSub": "Free · iOS 15.1+",
     "rating": "★★★★★",
@@ -16,7 +16,12 @@
     "floatWeekLabel": "Week 24",
     "floatWeekValue": "🌽 Corn",
     "floatScanLabel": "Next scan",
-    "floatScanValue": "Week 28 ✓"
+    "floatScanValue": "Week 28 ✓",
+    "uspPartner": "Partner sharing",
+    "uspPdf": "PDF birth plan export",
+    "uspCountries": "Israel · UK · US · Italy",
+    "uspDepth": "Deepest medical content",
+    "uspUniqueTag": "Only us"
   },
   "whyUs": {
     "eyebrow": "Why Trimester Pro — what no other app offers",

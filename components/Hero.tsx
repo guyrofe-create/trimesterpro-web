@@ -54,9 +54,35 @@ export default function Hero({ locale }: { locale: Locale }) {
             </div>
 
             {/* Rating */}
-            <div className={`flex items-center gap-2 ${isRTL ? 'justify-center lg:justify-end' : 'justify-center lg:justify-start'}`}>
+            <div className={`flex items-center gap-2 mb-6 ${isRTL ? 'justify-center lg:justify-end' : 'justify-center lg:justify-start'}`}>
               <span className="text-apricot text-sm tracking-wide">{t('rating')}</span>
               <span className="text-sub text-sm">{t('ratingCount')}</span>
+            </div>
+
+            {/* Unique selling points — visible above the fold */}
+            <div className={`grid grid-cols-2 gap-2 max-w-md mx-auto lg:mx-0`}>
+              {([
+                { icon: '👫', label: t('uspPartner'), unique: true },
+                { icon: '📄', label: t('uspPdf'),     unique: true },
+                { icon: '🌍', label: t('uspCountries'), unique: false },
+                { icon: '🔬', label: t('uspDepth'),    unique: false },
+              ] as const).map((usp, i) => (
+                <div key={i} className={`flex items-center gap-2 px-3 py-2.5 rounded-2xl border text-start ${
+                  usp.unique
+                    ? 'bg-espresso border-espresso/0'
+                    : 'bg-surface border-border'
+                }`}>
+                  <span className="text-base leading-none flex-shrink-0">{usp.icon}</span>
+                  <span className={`text-[12px] font-semibold leading-snug ${usp.unique ? 'text-[#FFFAF5]' : 'text-espresso'}`}>
+                    {usp.label}
+                  </span>
+                  {usp.unique && (
+                    <span className="ms-auto flex-shrink-0 bg-apricot text-espresso text-[9px] font-bold px-1.5 py-0.5 rounded-full">
+                      {t('uspUniqueTag')}
+                    </span>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
 

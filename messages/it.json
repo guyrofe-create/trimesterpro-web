@@ -8,7 +8,7 @@
   "hero": {
     "badge": "Il tuo compagno di gravidanza",
     "headline": "L'app di gravidanza che va più in profondità.",
-    "subtitle": "Contenuto medico più approfondito di qualsiasi concorrente — adattato per Italia, Israele, UK e USA. L'unica app con condivisione partner ed esportazione piano parto in PDF.",
+    "subtitle": "Contenuto medico piu approfondito di qualsiasi concorrente. Adattato per Italia, Israele, UK e USA.",
     "cta": "Scarica su App Store",
     "ctaSub": "Gratuito · iOS 15.1+",
     "rating": "★★★★★",
@@ -16,7 +16,12 @@
     "floatWeekLabel": "Settimana 24",
     "floatWeekValue": "🌽 Mais",
     "floatScanLabel": "Prossima ecografia",
-    "floatScanValue": "Sett. 28 ✓"
+    "floatScanValue": "Sett. 28 ✓",
+    "uspPartner": "Condivisione partner",
+    "uspPdf": "Esportazione PDF piano parto",
+    "uspCountries": "Italia · Israele · UK · USA",
+    "uspDepth": "Contenuto medico piu profondo",
+    "uspUniqueTag": "Solo noi"
   },
   "whyUs": {
     "eyebrow": "Perché Trimester Pro — quello che nessun'altra app offre",
