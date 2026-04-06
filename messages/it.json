@@ -7,8 +7,8 @@
   },
   "hero": {
     "badge": "Il tuo compagno di gravidanza",
-    "headline": "Ogni settimana, accade qualcosa di straordinario.",
-    "subtitle": "Contenuto medico approfondito scritto e revisionato da ginecologi — adattato per Italia, Israele, UK, USA e altri paesi.",
+    "headline": "L'app di gravidanza che va più in profondità.",
+    "subtitle": "Contenuto medico più approfondito di qualsiasi concorrente — adattato per Italia, Israele, UK e USA. L'unica app con condivisione partner ed esportazione piano parto in PDF.",
     "cta": "Scarica su App Store",
     "ctaSub": "Gratuito · iOS 15.1+",
     "rating": "★★★★★",
@@ -17,6 +17,33 @@
     "floatWeekValue": "🌽 Mais",
     "floatScanLabel": "Prossima ecografia",
     "floatScanValue": "Sett. 28 ✓"
+  },
+  "whyUs": {
+    "eyebrow": "Perché Trimester Pro — quello che nessun'altra app offre",
+    "items": [
+      {
+        "icon": "👫",
+        "title": "Condivisione partner — nessun'altra app lo fa",
+        "desc": "Invia al partner un aggiornamento settimanale in tempo reale con le dimensioni del bambino, la fase di sviluppo e cosa succede questa settimana.",
+        "tag": "Esclusiva"
+      },
+      {
+        "icon": "📄",
+        "title": "Esportazione PDF: piano parto e borsa ospedale",
+        "desc": "Genera un piano parto pronto per la stampa e una checklist per la borsa. Le ostetriche lo apprezzano. Nessun concorrente lo fa.",
+        "tag": "Esclusiva"
+      },
+      {
+        "icon": "🌍",
+        "title": "Adattato per Italia, Israele, UK e USA",
+        "desc": "Calendari di screening e linee guida mediche adattati al tuo paese — non una traduzione globale generica."
+      },
+      {
+        "icon": "🔬",
+        "title": "Il contenuto medico più approfondito",
+        "desc": "Ogni settimana: sviluppo, sintomi, sicurezza di cibi e farmaci, esami e cosa chiedere al ginecologo. Revisionato da medici."
+      }
+    ]
   },
   "socialProof": {
     "rating": "4.9",
@@ -48,38 +75,38 @@
     ]
   },
   "features": {
-    "title": "Tutto quello che ti serve, settimana dopo settimana",
-    "subtitle": "Costruito per le mamme che vogliono informazioni reali, non solo rassicurazioni.",
+    "title": "Costruita diversamente. Costruita in profondità.",
+    "subtitle": "Funzionalità che non troverai in nessun'altra app di gravidanza.",
     "items": [
       {
         "icon": "calendar",
-        "title": "Contenuto Medico Approfondito — 40 Settimane",
-        "desc": "Il contenuto medico più completo disponibile in un'app. Ogni settimana copre sviluppo fetale, cambiamenti materni, sintomi, esami e cosa chiedere al medico — scritto e revisionato da ginecologi."
+        "title": "Il Contenuto Medico Più Approfondito",
+        "desc": "Ogni settimana delle 40 include: sviluppo fetale, cambiamenti del corpo materno, sintomi, esami raccomandati, sicurezza di cibi e farmaci, e cosa chiedere al medico. Revisionato da ginecologi. Più profondo di qualsiasi concorrente."
       },
       {
-        "icon": "chart",
-        "title": "Strumenti Medici",
-        "desc": "Calcolatore DPP, timer contrazioni, conta calci, monitoraggio peso — tutto in un posto."
+        "icon": "share",
+        "title": "Condivisione Partner — Esclusiva",
+        "desc": "Nessun'altra app di gravidanza leader offre questo. Invia al partner un aggiornamento settimanale in tempo reale — dimensioni del bambino, fase di sviluppo e cosa succede questa settimana."
       },
       {
         "icon": "book",
-        "title": "Pianificatore Appuntamenti",
-        "desc": "Non perdere mai un esame o un'ecografia. Monitora l'intero calendario delle cure prenatali dalla settimana 8 al parto."
+        "title": "Esportazione PDF: Piano Parto e Borsa Ospedale",
+        "desc": "Genera un piano parto pronto per la stampa e una checklist per la borsa ospedale — personalizzata per la tua settimana. Le ostetriche e i medici lo apprezzano. Nessun'altra app lo fa."
       },
       {
         "icon": "globe",
         "title": "Adattato al Tuo Paese",
-        "desc": "Linee guida mediche adattate per Italia, Israele, UK, USA e altri. Calendario screening locale, terminologia locale — non una traduzione generica."
+        "desc": "Calendari di screening medico adattati per Italia, Israele, UK, USA e altri — non una traduzione generica. Esami locali, terminologia locale, linee guida locali."
+      },
+      {
+        "icon": "chart",
+        "title": "Kit Medico Completo",
+        "desc": "Timer contrazioni, conta calci, monitoraggio peso, calcolatore DPP, diario sintomi e pianificatore appuntamenti — un kit clinico completo in un'app bella e serena."
       },
       {
         "icon": "heart",
-        "title": "Diario Sintomi",
-        "desc": "Registra sintomi, sensazioni e note. Il tuo diario personale della gravidanza, sempre con te."
-      },
-      {
-        "icon": "share",
-        "title": "Condividi col Partner",
-        "desc": "Invia un aggiornamento personalizzato al tuo partner con le dimensioni attuali del bambino e i progressi settimanali."
+        "title": "Privacy Totale — Nessun Account",
+        "desc": "Tutti i tuoi dati vivono solo sul tuo dispositivo. Nessun account. Nessun tracciamento. Nessuna pubblicità. Solo tu, la tua gravidanza e totale tranquillità."
       }
     ]
   },

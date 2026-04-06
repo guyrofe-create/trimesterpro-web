@@ -2,6 +2,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { type Locale } from '@/config/i18n';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import WhyUs from '@/components/WhyUs';
 import SocialProof from '@/components/SocialProof';
 import WeekPreview from '@/components/WeekPreview';
 import Features from '@/components/Features';
@@ -20,6 +21,7 @@ export default async function HomePage(
     <main>
       <Navbar locale={locale} />
       <Hero locale={locale} />
+      <WhyUs />
       <SocialProof />
       <WeekPreview />
       <Features />

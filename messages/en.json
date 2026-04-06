@@ -7,8 +7,8 @@
   },
   "hero": {
     "badge": "Your pregnancy companion",
-    "headline": "Every week, something remarkable happens.",
-    "subtitle": "Doctor-reviewed, week-by-week pregnancy tracking with deep medical content — adapted for Israel, the UK, the US, Italy and more.",
+    "headline": "The pregnancy app that goes deeper.",
+    "subtitle": "Doctor-reviewed content for all 40 weeks. Adapted for Israel, UK, US & Italy. The only app with partner sharing and PDF birth plan export.",
     "cta": "Download on the App Store",
     "ctaSub": "Free · iOS 15.1+",
     "rating": "★★★★★",
@@ -17,6 +17,33 @@
     "floatWeekValue": "🌽 Corn",
     "floatScanLabel": "Next scan",
     "floatScanValue": "Week 28 ✓"
+  },
+  "whyUs": {
+    "eyebrow": "Why Trimester Pro — what no other app offers",
+    "items": [
+      {
+        "icon": "👫",
+        "title": "Partner sharing — no other app has this",
+        "desc": "Send your partner a live weekly update with your baby's size, development stage and what's happening this week.",
+        "tag": "Unique"
+      },
+      {
+        "icon": "📄",
+        "title": "PDF birth plan & hospital bag export",
+        "desc": "Generate a ready-to-print birth plan and hospital bag checklist. Midwives love it. No competitor does this.",
+        "tag": "Unique"
+      },
+      {
+        "icon": "🌍",
+        "title": "Adapted for Israel, UK, US & Italy",
+        "desc": "Screening schedules and medical guidelines tailored to your country — not a generic global translation."
+      },
+      {
+        "icon": "🔬",
+        "title": "The deepest medical content available",
+        "desc": "Every week: development, symptoms, food & medication safety, tests, and what to ask your OB-GYN. Reviewed by doctors."
+      }
+    ]
   },
   "socialProof": {
     "rating": "4.9",
@@ -48,38 +75,38 @@
     ]
   },
   "features": {
-    "title": "Everything you need, week by week",
-    "subtitle": "Built for mothers who want real information, not just reassurance.",
+    "title": "Built different. Built deeper.",
+    "subtitle": "Features you won't find anywhere else — in any other pregnancy app.",
     "items": [
       {
         "icon": "calendar",
-        "title": "Deep Medical Content — 40 Weeks",
-        "desc": "The most comprehensive pregnancy content available in an app. Every week covers fetal development, maternal changes, symptoms, tests, and what to ask your doctor — written and reviewed by OB-GYNs."
+        "title": "The Deepest Medical Content Available",
+        "desc": "Every one of the 40 weeks includes: fetal development, maternal body changes, symptoms, recommended tests, food & medication safety, and what to ask your doctor. Reviewed by OB-GYNs. More depth than any competitor."
       },
       {
-        "icon": "chart",
-        "title": "Medical Tools",
-        "desc": "EDD calculator, contraction timer, kick counter, weight tracker — all in one place."
+        "icon": "share",
+        "title": "Partner Sharing — Unique to Us",
+        "desc": "No other leading pregnancy app offers this. Send your partner a live weekly update — baby size, development stage, and what's happening this week. Keeps both of you in the moment."
       },
       {
         "icon": "book",
-        "title": "Appointment Planner",
-        "desc": "Never miss a test or scan. Track your entire prenatal care schedule from week 8 to birth."
+        "title": "PDF Export: Birth Plan & Hospital Bag",
+        "desc": "Generate a ready-to-print birth plan and hospital bag checklist — tailored to your week and preferences. Midwives and doctors love it. No other app does this."
       },
       {
         "icon": "globe",
         "title": "Adapted for Your Country",
-        "desc": "Medical guidelines adapted for Israel, the UK, the US, Italy and more. Local screening schedules, local terminology — not a generic translation."
+        "desc": "Medical screening schedules adapted for Israel, the UK, the US, Italy and more — not a generic translation. Local tests, local terminology, local guidelines."
+      },
+      {
+        "icon": "chart",
+        "title": "Complete Medical Toolkit",
+        "desc": "Contraction timer, kick counter, weight tracker, EDD calculator, symptom journal and appointment planner — a full clinical toolkit in one calm, beautiful app."
       },
       {
         "icon": "heart",
-        "title": "Symptom Journal",
-        "desc": "Log symptoms, feelings and notes. Your personal pregnancy diary, always with you."
-      },
-      {
-        "icon": "share",
-        "title": "Share with Partner",
-        "desc": "Send a personalised update to your partner with your baby's current size and week progress."
+        "title": "Total Privacy — No Account Needed",
+        "desc": "All your data lives only on your device. No account. No tracking. No ads. No community moderation issues. Just you, your pregnancy, and complete peace of mind."
       }
     ]
   },
