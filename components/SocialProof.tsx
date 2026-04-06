@@ -65,7 +65,6 @@ export default function SocialProof() {
   const t = useTranslations('socialProof');
 
   const stats: StatItemProps[] = [
-    { value: t('rating'),  numericTarget: 0,  suffix: '',   label: t('ratingLabel'),   icon: '★',  highlight: false },
     { value: t('weeks'),   numericTarget: 40, suffix: '',   label: t('weeksLabel'),    icon: undefined, highlight: false },
     { value: t('doctor'),  numericTarget: 0,  suffix: '',   label: t('doctorLabel'),   icon: '✦',  highlight: true  },
     { value: t('tools'),   numericTarget: 8,  suffix: '+',  label: t('toolsLabel'),    icon: undefined, highlight: false },

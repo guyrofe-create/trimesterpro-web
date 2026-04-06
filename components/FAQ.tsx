@@ -12,7 +12,10 @@ export default function FAQ() {
     <section id="faq" className="py-24 px-6 bg-surface">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-espresso mb-4 tracking-tight">
+          <h2
+            className="font-extrabold text-[#2A2319] mb-4 tracking-tight leading-[1.1]"
+            style={{ fontSize: 'clamp(1.875rem, 3vw + 0.5rem, 2.75rem)' }}
+          >
             {t('title')}
           </h2>
         </div>
@@ -24,7 +27,7 @@ export default function FAQ() {
               className="bg-bg border border-border rounded-3xl overflow-hidden transition-all duration-200 hover:border-espresso/20"
             >
               <button
-                className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+                className="w-full flex items-center justify-between gap-4 px-6 py-5 text-start"
                 onClick={() => setOpen(open === i ? null : i)}
               >
                 <span className="font-semibold text-espresso text-[15px] leading-snug">{item.q}</span>

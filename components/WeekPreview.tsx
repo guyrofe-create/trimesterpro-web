@@ -15,12 +15,15 @@ export default function WeekPreview() {
     <section className="py-24 px-6 bg-espresso overflow-hidden relative">
       {/* Decorative blob */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-apricot/6 blur-3xl translate-x-1/3 -translate-y-1/3 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl -translate-x-1/3 translate-y-1/3 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-apricot/5 blur-3xl -translate-x-1/3 translate-y-1/3 pointer-events-none" />
 
       <div className="max-w-2xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#FFFAF5] mb-4 tracking-tight leading-tight">
+          <h2
+            className="font-extrabold text-[#FFFAF5] mb-4 tracking-tight leading-[1.1]"
+            style={{ fontSize: 'clamp(1.875rem, 3vw + 0.5rem, 2.75rem)' }}
+          >
             {t('title')}
           </h2>
           <p className="text-[#FFFAF5]/55 text-lg leading-relaxed max-w-md mx-auto">

@@ -18,10 +18,13 @@ export default function Screenshots({ locale }: { locale: Locale }) {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-espresso mb-4 tracking-tight leading-tight">
+          <h2
+            className="font-extrabold text-[#2A2319] mb-4 tracking-tight leading-[1.1]"
+            style={{ fontSize: 'clamp(1.875rem, 3vw + 0.5rem, 2.75rem)' }}
+          >
             {t('title')}
           </h2>
-          <p className="text-sub text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-[#6B6560] text-lg max-w-xl mx-auto leading-relaxed">
             {t('subtitle')}
           </p>
         </div>

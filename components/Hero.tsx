@@ -30,7 +30,7 @@ export default function Hero({ locale }: { locale: Locale }) {
           {/* ── Left column: text ── */}
           <div className={`flex-1 text-center ${isRTL ? 'lg:text-right' : 'lg:text-left'}`}>
 
-            {/* ① Rating stars — ABOVE headline (Flo / Glow pattern) */}
+            {/* ① Stars — ABOVE headline (no fake count) */}
             <div className={`flex items-center gap-2 mb-5 ${isRTL ? 'justify-center lg:justify-end' : 'justify-center lg:justify-start'}`}>
               <div className="flex gap-0.5">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -39,8 +39,7 @@ export default function Hero({ locale }: { locale: Locale }) {
                   </svg>
                 ))}
               </div>
-              <span className="text-[14px] font-bold text-espresso leading-none">4.9</span>
-              <span className="text-[13px] text-sub leading-none">{t('ratingCount')}</span>
+              <span className="text-[13px] text-[#9A9490] leading-none">App Store</span>
             </div>
 
             {/* ② Headline — fluid clamp size */}
