@@ -6,11 +6,11 @@ export default function SocialProof() {
   const t = useTranslations('socialProof');
 
   const items = [
-    { value: t('rating'),    label: t('ratingLabel'),    icon: '★' },
-    { value: t('weeks'),     label: t('weeksLabel'),     icon: null },
-    { value: t('languages'), label: t('languagesLabel'), icon: null },
-    { value: t('tools'),     label: t('toolsLabel'),     icon: null },
-    { value: t('free'),      label: t('freeLabel'),      icon: null },
+    { value: t('rating'),    label: t('ratingLabel'),    icon: '★',  highlight: false },
+    { value: t('weeks'),     label: t('weeksLabel'),     icon: null, highlight: false },
+    { value: t('doctor'),    label: t('doctorLabel'),    icon: '✦',  highlight: true  },
+    { value: t('tools'),     label: t('toolsLabel'),     icon: null, highlight: false },
+    { value: t('free'),      label: t('freeLabel'),      icon: null, highlight: false },
   ];
 
   return (
@@ -22,8 +22,8 @@ export default function SocialProof() {
               <div className="w-px h-6 bg-border flex-shrink-0" />
             )}
             <div className="text-center">
-              <div className="text-[17px] font-bold text-espresso flex items-center justify-center gap-1">
-                {item.icon && <span className="text-apricot">{item.icon}</span>}
+              <div className={`text-[17px] font-bold flex items-center justify-center gap-1 ${item.highlight ? 'text-sage' : 'text-espresso'}`}>
+                {item.icon && <span className={item.highlight ? 'text-sage' : 'text-apricot'}>{item.icon}</span>}
                 {item.value}
               </div>
               <div className="text-[11px] text-sub mt-0.5 font-medium">{item.label}</div>

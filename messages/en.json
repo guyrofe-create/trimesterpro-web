@@ -8,7 +8,7 @@
   "hero": {
     "badge": "Your pregnancy companion",
     "headline": "Every week, something remarkable happens.",
-    "subtitle": "Week-by-week pregnancy tracking backed by medical research — so you always know what's happening and what comes next.",
+    "subtitle": "Doctor-reviewed, week-by-week pregnancy tracking with deep medical content — adapted for Israel, the UK, the US, Italy and more.",
     "cta": "Download on the App Store",
     "ctaSub": "Free · iOS 15.1+",
     "rating": "★★★★★",
@@ -28,7 +28,9 @@
     "tools": "8+",
     "toolsLabel": "Medical Tools",
     "free": "Free",
-    "freeLabel": "Forever"
+    "freeLabel": "Forever",
+    "doctor": "MD Reviewed",
+    "doctorLabel": "All Content"
   },
   "weekPreview": {
     "title": "Your baby, week by week.",
@@ -51,8 +53,8 @@
     "items": [
       {
         "icon": "calendar",
-        "title": "Weekly Development",
-        "desc": "Detailed fetal development content for all 40 weeks, with size comparisons and milestone tracking."
+        "title": "Deep Medical Content — 40 Weeks",
+        "desc": "The most comprehensive pregnancy content available in an app. Every week covers fetal development, maternal changes, symptoms, tests, and what to ask your doctor — written and reviewed by OB-GYNs."
       },
       {
         "icon": "chart",
@@ -66,8 +68,8 @@
       },
       {
         "icon": "globe",
-        "title": "3 Languages",
-        "desc": "Full content in Hebrew, English and Italian. The app detects your language automatically."
+        "title": "Adapted for Your Country",
+        "desc": "Medical guidelines adapted for Israel, the UK, the US, Italy and more. Local screening schedules, local terminology — not a generic translation."
       },
       {
         "icon": "heart",
