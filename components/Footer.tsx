@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { type Locale } from '@/config/i18n';
 
 const createdBy: Record<Locale, string> = {
@@ -19,9 +20,7 @@ export default function Footer({ locale }: { locale: Locale }) {
         {/* Logo + creator */}
         <div className="flex flex-col items-center md:items-start gap-1">
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-xl bg-[#2A2319] flex items-center justify-center">
-              <span className="text-[#F2A46E] text-xs font-bold">T</span>
-            </div>
+            <Image src="/icon.png" alt="Trimester Pro" width={28} height={28} className="rounded-xl" />
             <span className="font-bold text-[#2A2319] text-[14px]">Trimester Pro</span>
           </div>
           <span className="text-[11px] text-[#9A9490]">{createdBy[locale]}</span>

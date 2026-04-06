@@ -4,7 +4,11 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { type Locale } from '@/config/i18n';
 
-const APP_STORE_URL = 'https://apps.apple.com/app/id6744104960';
+const getAppStoreURL = (locale: string) => {
+  if (locale === 'he') return 'https://apps.apple.com/il/app/trimester-pro/id6744104960';
+  if (locale === 'it') return 'https://apps.apple.com/it/app/trimester-pro/id6744104960';
+  return 'https://apps.apple.com/gb/app/trimester-pro/id6744104960';
+};
 
 export default function Hero({ locale }: { locale: Locale }) {
   const t = useTranslations('hero');
@@ -92,7 +96,7 @@ export default function Hero({ locale }: { locale: Locale }) {
             {/* ⑤ CTA pill button */}
             <div className="flex flex-col gap-2 items-center lg:items-start">
               <a
-                href={APP_STORE_URL}
+                href={getAppStoreURL(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-[#2A2319] text-[#FFFAF5] px-7 py-4 rounded-full hover:bg-[#1A1510] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-[0_8px_28px_rgba(42,35,25,0.22)]"

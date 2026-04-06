@@ -2,10 +2,15 @@
 
 import { useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { locales, localeConfig, type Locale } from '@/config/i18n';
 import { useState, useEffect } from 'react';
 
-const APP_STORE_URL = 'https://apps.apple.com/app/id6744104960';
+const getAppStoreURL = (locale: string) => {
+  if (locale === 'he') return 'https://apps.apple.com/il/app/trimester-pro/id6744104960';
+  if (locale === 'it') return 'https://apps.apple.com/it/app/trimester-pro/id6744104960';
+  return 'https://apps.apple.com/gb/app/trimester-pro/id6744104960';
+};
 
 export default function Navbar({ locale }: { locale: Locale }) {
   const t = useTranslations('nav');
@@ -34,9 +39,13 @@ export default function Navbar({ locale }: { locale: Locale }) {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-xl bg-[#2A2319] flex items-center justify-center">
-            <span className="text-[#F2A46E] text-sm font-bold">T</span>
-          </div>
+          <Image
+            src="/icon.png"
+            alt="Trimester Pro"
+            width={32}
+            height={32}
+            className="rounded-xl"
+          />
           <span className="font-bold text-[#2A2319] text-[15px] tracking-tight">Trimester Pro</span>
         </div>
 
@@ -64,7 +73,7 @@ export default function Navbar({ locale }: { locale: Locale }) {
           </div>
 
           <a
-            href={APP_STORE_URL}
+            href={getAppStoreURL(locale)}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#2A2319] text-[#FFFAF5] text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#1A1510] transition-colors"
@@ -111,7 +120,7 @@ export default function Navbar({ locale }: { locale: Locale }) {
             ))}
           </div>
           <a
-            href={APP_STORE_URL}
+            href={getAppStoreURL(locale)}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#2A2319] text-[#FFFAF5] text-sm font-semibold px-5 py-3 rounded-full text-center"
