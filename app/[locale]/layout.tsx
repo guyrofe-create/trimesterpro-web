@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { locales, localeConfig, type Locale } from '@/config/i18n';
 import type { Metadata } from 'next';
 
@@ -46,7 +46,8 @@ export default async function LocaleLayout(
   props: { children: React.ReactNode; params: Promise<{ locale: string }> }
 ) {
   const { locale } = await props.params;
-  const messages = await getMessages();
+  setRequestLocale(locale);
+  const messages = await getMessages({ locale });
   const dir = (localeConfig[locale as Locale]?.dir) ?? 'ltr';
 
   return (

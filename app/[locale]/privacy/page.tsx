@@ -1,14 +1,15 @@
-import { getTranslations } from 'next-intl/server';
-import Link from 'next/link';
-import { type Locale } from '@/config/i18n';
+'use client';
 
-export default async function PrivacyPage(
-  props: { params: Promise<{ locale: Locale }> }
-) {
-  const { locale } = await props.params;
-  const t = await getTranslations('privacy');
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
+
+export default function PrivacyPage() {
+  const params = useParams();
+  const locale = params.locale as string;
+  const t = useTranslations('privacy');
   const sections = t.raw('sections') as Array<{ title: string; content: string }>;
-  const footerT = await getTranslations('footer');
+  const footerT = useTranslations('footer');
 
   return (
     <div className="min-h-screen bg-bg">

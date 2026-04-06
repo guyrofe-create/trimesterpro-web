@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server';
 import { type Locale } from '@/config/i18n';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -10,6 +11,7 @@ export default async function HomePage(
   props: { params: Promise<{ locale: Locale }> }
 ) {
   const { locale } = await props.params;
+  setRequestLocale(locale);
   return (
     <main>
       <Navbar locale={locale} />
