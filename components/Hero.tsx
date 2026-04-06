@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { type Locale } from '@/config/i18n';
 
-const APP_STORE_URL = 'https://apps.apple.com/app/trimester-pro/id6744104960';
+const APP_STORE_URL = 'https://apps.apple.com/us/app/trimester-pro/id6744104960';
 
 export default function Hero({ locale }: { locale: Locale }) {
   const t = useTranslations('hero');

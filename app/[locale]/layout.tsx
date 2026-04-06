@@ -87,7 +87,7 @@ export async function generateMetadata(
 }
 
 // ── JSON-LD per locale ───────────────────────────────────────────────────────
-const APP_STORE_URL = 'https://apps.apple.com/app/trimester-pro/id6744104960';
+const APP_STORE_URL = 'https://apps.apple.com/us/app/trimester-pro/id6744104960';
 
 function buildJsonLd(locale: string) {
   const softwareApp = {

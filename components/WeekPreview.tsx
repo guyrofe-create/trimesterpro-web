@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
-const APP_STORE_URL = 'https://apps.apple.com/app/trimester-pro/id6744104960';
+const APP_STORE_URL = 'https://apps.apple.com/us/app/trimester-pro/id6744104960';
 
 export default function WeekPreview() {
   const t = useTranslations('weekPreview');
