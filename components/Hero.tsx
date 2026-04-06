@@ -17,72 +17,62 @@ export default function Hero({ locale }: { locale: Locale }) {
 
           {/* Text */}
           <div className={`flex-1 text-center ${isRTL ? 'lg:text-right' : 'lg:text-left'}`}>
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-apricotSoft text-apricot border border-apricot/20 text-xs font-semibold px-4 py-1.5 rounded-full mb-8">
-              <span className="w-1.5 h-1.5 rounded-full bg-apricot inline-block" />
-              {t('badge')}
-            </div>
-
-            {/* Headline */}
-            <h1 className="text-[44px] lg:text-[60px] xl:text-[68px] font-extrabold leading-[1.08] tracking-[-0.03em] text-espresso mb-6 max-w-xl mx-auto lg:mx-0">
-              {t('headline')}
-            </h1>
-
-            {/* Subtitle */}
-            <p className="text-sub text-lg leading-[1.7] max-w-md mx-auto lg:mx-0 mb-8">
-              {t('subtitle')}
-            </p>
-
-            {/* CTA Button */}
-            <div className={`flex flex-col sm:flex-row items-center gap-4 mb-6 ${isRTL ? 'justify-center lg:justify-end' : 'justify-center lg:justify-start'}`}>
-              <a
-                href={APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3.5 bg-espresso text-[#FFFAF5] px-7 py-4 rounded-2xl hover:bg-espresso/90 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-warm-md"
-              >
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" className="flex-shrink-0">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                </svg>
-                <div className={isRTL ? 'text-right' : 'text-left'}>
-                  <div className="text-[11px] opacity-60 leading-none mb-0.5 font-normal">
-                    {locale === 'it' ? 'Disponibile su' : locale === 'he' ? 'זמין ב' : 'Download on the'}
-                  </div>
-                  <div className="text-[17px] font-bold leading-none">App Store</div>
-                </div>
-              </a>
-            </div>
-
-            {/* Rating */}
-            <div className={`flex items-center gap-2 mb-6 ${isRTL ? 'justify-center lg:justify-end' : 'justify-center lg:justify-start'}`}>
-              <span className="text-apricot text-sm tracking-wide">{t('rating')}</span>
-              <span className="text-sub text-sm">{t('ratingCount')}</span>
-            </div>
-
-            {/* Unique selling points — visible above the fold */}
-            <div className={`grid grid-cols-2 gap-2 max-w-md mx-auto lg:mx-0`}>
+            {/* USP chips — FIRST thing visible */}
+            <div className="grid grid-cols-2 gap-2 max-w-sm mx-auto lg:mx-0 mb-7">
               {([
-                { icon: '👫', label: t('uspPartner'), unique: true },
-                { icon: '📄', label: t('uspPdf'),     unique: true },
-                { icon: '🌍', label: t('uspCountries'), unique: false },
-                { icon: '🔬', label: t('uspDepth'),    unique: false },
+                { icon: '👫', label: t('uspPartner'),   unique: true },
+                { icon: '📄', label: t('uspPdf'),        unique: true },
+                { icon: '🌍', label: t('uspCountries'),  unique: false },
+                { icon: '🔬', label: t('uspDepth'),      unique: false },
               ] as const).map((usp, i) => (
-                <div key={i} className={`flex items-center gap-2 px-3 py-2.5 rounded-2xl border text-start ${
-                  usp.unique
-                    ? 'bg-espresso border-espresso/0'
-                    : 'bg-surface border-border'
+                <div key={i} className={`flex items-center gap-2 px-3 py-2.5 rounded-2xl border ${
+                  usp.unique ? 'bg-espresso' : 'bg-surface border-border'
                 }`}>
                   <span className="text-base leading-none flex-shrink-0">{usp.icon}</span>
-                  <span className={`text-[12px] font-semibold leading-snug ${usp.unique ? 'text-[#FFFAF5]' : 'text-espresso'}`}>
+                  <span className={`text-[12px] font-semibold leading-snug flex-1 ${usp.unique ? 'text-[#FFFAF5]' : 'text-espresso'}`}>
                     {usp.label}
                   </span>
                   {usp.unique && (
-                    <span className="ms-auto flex-shrink-0 bg-apricot text-espresso text-[9px] font-bold px-1.5 py-0.5 rounded-full">
+                    <span className="flex-shrink-0 bg-apricot text-espresso text-[9px] font-bold px-1.5 py-0.5 rounded-full">
                       {t('uspUniqueTag')}
                     </span>
                   )}
                 </div>
               ))}
+            </div>
+
+            {/* Headline */}
+            <h1 className="text-[38px] lg:text-[52px] xl:text-[60px] font-extrabold leading-[1.08] tracking-[-0.03em] text-espresso mb-4 max-w-xl mx-auto lg:mx-0">
+              {t('headline')}
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-sub text-base leading-[1.7] max-w-md mx-auto lg:mx-0 mb-7">
+              {t('subtitle')}
+            </p>
+
+            {/* CTA + Rating */}
+            <div className={`flex flex-wrap items-center gap-4 mb-2 ${isRTL ? 'justify-center lg:justify-end' : 'justify-center lg:justify-start'}`}>
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-espresso text-[#FFFAF5] px-6 py-3.5 rounded-2xl hover:bg-espresso/90 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-warm-md"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="flex-shrink-0">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                <div className={isRTL ? 'text-right' : 'text-left'}>
+                  <div className="text-[10px] opacity-60 leading-none mb-0.5">
+                    {locale === 'it' ? 'Disponibile su' : locale === 'he' ? 'זמין ב' : 'Download on the'}
+                  </div>
+                  <div className="text-[16px] font-bold leading-none">App Store</div>
+                </div>
+              </a>
+              <div className="flex items-center gap-1.5">
+                <span className="text-apricot text-sm">{t('rating')}</span>
+                <span className="text-sub text-sm">{t('ratingCount')}</span>
+              </div>
             </div>
           </div>
 
