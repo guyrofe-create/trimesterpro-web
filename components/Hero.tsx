@@ -18,22 +18,18 @@ export default function Hero({ locale }: { locale: Locale }) {
           {/* Text */}
           <div className={`flex-1 text-center ${isRTL ? 'lg:text-right' : 'lg:text-left'}`}>
             {/* USP chips — FIRST thing visible */}
-            <div className="grid grid-cols-2 gap-2 max-w-sm mx-auto lg:mx-0 mb-7">
+            <div className="flex flex-col gap-2 max-w-sm mx-auto lg:mx-0 mb-7">
               {([
                 { icon: '👫', label: t('uspPartner'),   unique: true },
                 { icon: '📄', label: t('uspPdf'),        unique: true },
                 { icon: '🌍', label: t('uspCountries'),  unique: false },
                 { icon: '🔬', label: t('uspDepth'),      unique: false },
               ] as const).map((usp, i) => (
-                <div key={i} className={`flex items-center gap-2 px-3 py-2.5 rounded-2xl border ${
-                  usp.unique ? 'bg-espresso' : 'bg-surface border-border'
-                }`}>
-                  <span className="text-base leading-none flex-shrink-0">{usp.icon}</span>
-                  <span className={`text-[12px] font-semibold leading-snug flex-1 ${usp.unique ? 'text-[#FFFAF5]' : 'text-espresso'}`}>
-                    {usp.label}
-                  </span>
+                <div key={i} className="flex items-center gap-2.5">
+                  <span className="text-sm leading-none flex-shrink-0">{usp.icon}</span>
+                  <span className="text-[13px] text-body leading-snug flex-1">{usp.label}</span>
                   {usp.unique && (
-                    <span className="flex-shrink-0 bg-apricot text-espresso text-[9px] font-bold px-1.5 py-0.5 rounded-full">
+                    <span className="flex-shrink-0 bg-accentSoft text-accent text-[10px] font-bold px-2 py-0.5 rounded-full">
                       {t('uspUniqueTag')}
                     </span>
                   )}
