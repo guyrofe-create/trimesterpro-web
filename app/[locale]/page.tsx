@@ -23,12 +23,12 @@ export default async function HomePage(
       <Hero locale={locale} />
       <WhyUs />
       <SocialProof />
-      <WeekPreview />
+      <WeekPreview locale={locale} />
       <Features />
       <Screenshots locale={locale} />
       <Testimonials />
       <FAQ />
-      <DownloadCTA />
+      <DownloadCTA locale={locale} />
       <Footer locale={locale} />
     </main>
   );

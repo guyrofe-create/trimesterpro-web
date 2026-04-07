@@ -1,10 +1,15 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { type Locale } from '@/config/i18n';
 
-const APP_STORE_URL = 'https://apps.apple.com/app/id6744104960';
+const getAppStoreURL = (locale: string) => {
+  if (locale === 'he') return 'https://apps.apple.com/il/app/trimester-pro/id6744104960';
+  if (locale === 'it') return 'https://apps.apple.com/it/app/trimester-pro/id6744104960';
+  return 'https://apps.apple.com/us/app/trimester-pro/id6744104960';
+};
 
-export default function DownloadCTA() {
+export default function DownloadCTA({ locale }: { locale: Locale }) {
   const t = useTranslations('cta');
 
   return (
@@ -26,7 +31,7 @@ export default function DownloadCTA() {
 
         {/* CTA */}
         <a
-          href={APP_STORE_URL}
+          href={getAppStoreURL(locale)}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3.5 bg-[#FFFAF5] text-espresso px-8 py-4 rounded-full font-bold text-[16px] hover:bg-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-warm-lg"

@@ -7,7 +7,7 @@ import { type Locale } from '@/config/i18n';
 const getAppStoreURL = (locale: string) => {
   if (locale === 'he') return 'https://apps.apple.com/il/app/trimester-pro/id6744104960';
   if (locale === 'it') return 'https://apps.apple.com/it/app/trimester-pro/id6744104960';
-  return 'https://apps.apple.com/gb/app/trimester-pro/id6744104960';
+  return 'https://apps.apple.com/us/app/trimester-pro/id6744104960';
 };
 
 export default function Hero({ locale }: { locale: Locale }) {

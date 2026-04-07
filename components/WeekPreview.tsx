@@ -1,11 +1,16 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { type Locale } from '@/config/i18n';
 import { useState } from 'react';
 
-const APP_STORE_URL = 'https://apps.apple.com/app/id6744104960';
+const getAppStoreURL = (locale: string) => {
+  if (locale === 'he') return 'https://apps.apple.com/il/app/trimester-pro/id6744104960';
+  if (locale === 'it') return 'https://apps.apple.com/it/app/trimester-pro/id6744104960';
+  return 'https://apps.apple.com/us/app/trimester-pro/id6744104960';
+};
 
-export default function WeekPreview() {
+export default function WeekPreview({ locale }: { locale: Locale }) {
   const t = useTranslations('weekPreview');
   const weeks = t.raw('weeks') as Array<{ week: number; emoji: string; name: string; size: string; fact: string }>;
   const [activeIndex, setActiveIndex] = useState(2);
@@ -77,7 +82,7 @@ export default function WeekPreview() {
 
           {/* CTA */}
           <a
-            href={APP_STORE_URL}
+            href={getAppStoreURL(locale)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border border-[#FFFAF5]/25 text-[#FFFAF5]/80 hover:text-[#FFFAF5] hover:border-[#FFFAF5]/50 px-7 py-3 rounded-full text-sm font-semibold transition-all duration-200"
