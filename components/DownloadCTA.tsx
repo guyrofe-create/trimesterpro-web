@@ -4,9 +4,9 @@ import { useTranslations } from 'next-intl';
 import { type Locale } from '@/config/i18n';
 
 const getAppStoreURL = (locale: string) => {
-  if (locale === 'he') return 'https://apps.apple.com/il/app/trimester-pro/id6744104960';
-  if (locale === 'it') return 'https://apps.apple.com/it/app/trimester-pro/id6744104960';
-  return 'https://apps.apple.com/us/app/trimester-pro/id6744104960';
+  if (locale === 'he') return 'https://apps.apple.com/il/app/trimester-pro/id6759156229';
+  if (locale === 'it') return 'https://apps.apple.com/it/app/trimester-pro/id6759156229';
+  return 'https://apps.apple.com/us/app/trimester-pro/id6759156229';
 };
 
 export default function DownloadCTA({ locale }: { locale: Locale }) {
