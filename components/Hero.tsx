@@ -10,6 +10,12 @@ const getAppStoreURL = (locale: string) => {
   return 'https://apps.apple.com/us/app/trimester-pro/id6759156229';
 };
 
+const getGooglePlayURL = (locale: string) => {
+  if (locale === 'he') return 'https://play.google.com/store/apps/details?id=com.guyrofe.preweeksgame&hl=iw';
+  if (locale === 'it') return 'https://play.google.com/store/apps/details?id=com.guyrofe.preweeksgame&hl=it';
+  return 'https://play.google.com/store/apps/details?id=com.guyrofe.preweeksgame&hl=en';
+};
+
 export default function Hero({ locale }: { locale: Locale }) {
   const t = useTranslations('hero');
   // Only used for floating card positioning (physical left/right) and CTA label text
@@ -26,6 +32,11 @@ export default function Hero({ locale }: { locale: Locale }) {
     locale === 'it' ? 'Disponibile su' :
     locale === 'he' ? 'זמין ב' :
     'Download on the';
+
+  const googlePlayLabel =
+    locale === 'it' ? 'Disponibile su' :
+    locale === 'he' ? 'הורד ב' :
+    'Get it on';
 
   return (
     <section className="gradient-hero min-h-screen flex flex-col justify-center pt-20 overflow-hidden">
@@ -93,22 +104,40 @@ export default function Hero({ locale }: { locale: Locale }) {
               ))}
             </ul>
 
-            {/* ⑤ CTA pill button */}
+            {/* ⑤ CTA pill buttons */}
             <div className="flex flex-col gap-2 items-center lg:items-start">
-              <a
-                href={getAppStoreURL(locale)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[#2A2319] text-[#FFFAF5] px-7 py-4 rounded-full hover:bg-[#1A1510] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-[0_8px_28px_rgba(42,35,25,0.22)]"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="flex-shrink-0">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                </svg>
-                <div className="text-start">
-                  <div className="text-[10px] opacity-55 leading-none mb-0.5">{downloadLabel}</div>
-                  <div className="text-[16px] font-bold leading-none">App Store</div>
-                </div>
-              </a>
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                {/* App Store */}
+                <a
+                  href={getAppStoreURL(locale)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-[#2A2319] text-[#FFFAF5] px-7 py-4 rounded-full hover:bg-[#1A1510] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-[0_8px_28px_rgba(42,35,25,0.22)]"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="flex-shrink-0">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                  </svg>
+                  <div className="text-start">
+                    <div className="text-[10px] opacity-55 leading-none mb-0.5">{downloadLabel}</div>
+                    <div className="text-[16px] font-bold leading-none">App Store</div>
+                  </div>
+                </a>
+                {/* Google Play */}
+                <a
+                  href={getGooglePlayURL(locale)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-[#2A2319] text-[#FFFAF5] px-7 py-4 rounded-full hover:bg-[#1A1510] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-[0_8px_28px_rgba(42,35,25,0.22)]"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="flex-shrink-0">
+                    <path d="M3.18 23.76c.37.2.8.22 1.19.04l12.55-7.25-2.8-2.8-10.94 10.01zm-1.38-20.5C1.63 3.52 1.5 3.84 1.5 4.23v15.54c0 .39.13.71.3.97l.09.08 8.7-8.7v-.2L1.8 3.26zm18.41 9.12l-2.53-1.42-3.09 3.09 3.09 3.09 2.56-1.44c.73-.41.73-1.91-.03-2.32zM4.37.47C4.06.26 3.7.22 3.38.35L14.35 11.3l-2.8 2.8L4.37.47z"/>
+                  </svg>
+                  <div className="text-start">
+                    <div className="text-[10px] opacity-55 leading-none mb-0.5">{googlePlayLabel}</div>
+                    <div className="text-[16px] font-bold leading-none">Google Play</div>
+                  </div>
+                </a>
+              </div>
               <p className="text-[12px] text-[#9A9490]">{t('ctaSub')}</p>
             </div>
           </div>
