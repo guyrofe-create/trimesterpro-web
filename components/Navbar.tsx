@@ -106,6 +106,28 @@ export default function Navbar({ locale }: { locale: Locale }) {
           </div>
         </div>
 
+        {/* Mobile download buttons - visible on mobile in navbar */}
+        <div className="md:hidden flex items-center gap-1.5 mr-1">
+          <a
+            href={getAppStoreURL(locale)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 bg-[#2A2319] text-[#FFFAF5] text-xs font-semibold px-2.5 py-2 rounded-full"
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+          </a>
+          <a
+            href={getGooglePlayURL(locale)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 bg-[#2A2319] text-[#FFFAF5] text-xs font-semibold px-2.5 py-2 rounded-full"
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.37.2.8.22 1.19.04l12.55-7.25-2.8-2.8-10.94 10.01zm-1.38-20.5C1.63 3.52 1.5 3.84 1.5 4.23v15.54c0 .39.13.71.3.97l.09.08 8.7-8.7v-.2L1.8 3.26zm18.41 9.12l-2.53-1.42-3.09 3.09 3.09 3.09 2.56-1.44c.73-.41.73-1.91-.03-2.32zM4.37.47C4.06.26 3.7.22 3.38.35L14.35 11.3l-2.8 2.8L4.37.47z"/></svg>
+            Google Play
+          </a>
+        </div>
+
         {/* Mobile toggle */}
         <button
           className="md:hidden p-2 text-sub hover:text-espresso"
