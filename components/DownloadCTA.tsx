@@ -10,9 +10,9 @@ const getAppStoreURL = (locale: string) => {
 };
 
 const getGooglePlayURL = (locale: string) => {
-  if (locale === 'he') return 'https://play.google.com/store/apps/details?id=com.guyrofe.preweeksgame&hl=iw';
-  if (locale === 'it') return 'https://play.google.com/store/apps/details?id=com.guyrofe.preweeksgame&hl=it';
-  return 'https://play.google.com/store/apps/details?id=com.guyrofe.preweeksgame&hl=en';
+  if (locale === 'he') return 'https://play.google.com/store/apps/details?id=com.guyrofe.preweeksgame&pcampaignid=web_share&hl=iw';
+  if (locale === 'it') return 'https://play.google.com/store/apps/details?id=com.guyrofe.preweeksgame&pcampaignid=web_share&hl=it';
+  return 'https://play.google.com/store/apps/details?id=com.guyrofe.preweeksgame&pcampaignid=web_share&hl=en';
 };
 
 export default function DownloadCTA({ locale }: { locale: Locale }) {
